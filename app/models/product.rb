@@ -1,3 +1,4 @@
 class Product < ApplicationRecord
-  has_many :
+  has_many :pricings
+  has_many :vendors,:through =>:pricings
 end
