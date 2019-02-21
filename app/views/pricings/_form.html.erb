@@ -28,9 +28,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :product_id %>
-    <%= form.text_field :product_id %>
+    <%= form.collection_select :product_id, Product.all, :id ,:productname %>
+
+
   </div>
+
+
 
   <div class="actions">
     <%= form.submit %>
