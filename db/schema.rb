@@ -30,15 +30,6 @@ ActiveRecord::Schema.define(version: 2019_02_21_021835) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
-    t.string "phonenumber"
-    t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "vendors", force: :cascade do |t|
     t.string "vendorname"
     t.datetime "created_at", null: false
