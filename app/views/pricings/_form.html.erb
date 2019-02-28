@@ -17,6 +17,12 @@
   </div>
 
   <div class="field">
+    <%= form.label :vendor_id %>
+    <%= form.text_field :vendor_id, vendor.all :id, :name %>
+
+  </div>
+
+  <div class="field">
     <%= form.label :quantitydiscount %>
     <%= form.text_field :quantitydiscount %>
   </div>

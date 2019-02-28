@@ -16,6 +16,15 @@
     <%= form.text_field :vendorname %>
   </div>
 
+  <div class="field">
+    <%= form.label :productname %>
+    <%= form.text_field :pricing, product.productname.all %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pricing %>
+    <%= form.text_field :pricing, productname %>
+  </div>
 
 
   <div class="actions">

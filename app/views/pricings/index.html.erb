@@ -18,8 +18,8 @@
       <tr>
         <td><%= pricing.price %></td>
         <td><%= pricing.quantitydiscount %></td>
-        <td><%= pricing.vendor %></td>
-        <td><%= pricing.product %></td>
+        <td><%= pricing.vendor.vendorname %></td>
+        <td><%= pricing.product.productname %></td>
         <td><%= link_to 'Show', pricing %></td>
         <td><%= link_to 'Edit', edit_pricing_path(pricing) %></td>
         <td><%= link_to 'Destroy', pricing, method: :delete, data: { confirm: 'Are you sure?' } %></td>

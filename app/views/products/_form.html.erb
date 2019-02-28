@@ -21,6 +21,12 @@
     <%= form.text_field :productprice %>
   </div>
 
+  <div class="field">
+    <%= form.collection_select :vendor_id, Vendor.all, :id ,:vendorname %>
+
+
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
